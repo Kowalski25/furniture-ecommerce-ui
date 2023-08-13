@@ -1,8 +1,11 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, ActivityIndicator } from 'react-native';
 import { SliderBox } from 'react-native-image-slider-box';
 import { COLORS, SIZES } from '../../constants/index';
 
+const ImageLoader = () => {
+  return <ActivityIndicator size="large" color="blue" />
+}
 
 const Carousel = () => {
   const slides = [
@@ -22,6 +25,7 @@ const Carousel = () => {
         dotsTransitionDuration={100}
         autoplay={true}
         autoplayInterval={4000}
+        imageLoadingColor={'gray'}
       />
     </View>
   );

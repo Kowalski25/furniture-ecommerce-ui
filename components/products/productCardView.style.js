@@ -1,11 +1,11 @@
-import { StyleSheet } from 'react-native';
-import { COLORS, SIZES } from '../../constants';
+import { StyleSheet } from "react-native";
+import { COLORS, SIZES } from "../../constants";
 
 const styles = StyleSheet.create({
   container: {
     backgroundColor: COLORS.secondary,
     borderRadius: SIZES.medium,
-    marginEnd: 20,
+    marginEnd: 10,
     height: 240,
     width: 182,
   },
@@ -15,18 +15,35 @@ const styles = StyleSheet.create({
     marginLeft: SIZES.small / 2,
     marginTop: SIZES.small / 2,
     borderRadius: SIZES.small,
-    overflow: 'hidden',
+    overflow: "hidden",
   },
   image: {
     aspectRatio: 1,
-    resizeMode: 'cover',
+    resizeMode: "cover",
   },
   details: {
     padding: SIZES.small,
   },
   title: {
-    
-  }
+    fontFamily: "bold",
+    fontSize: SIZES.large,
+    marginBottom: 2,
+  },
+  supplier: {
+    color: COLORS.gray,
+    fontFamily: "regular",
+    fontSize: SIZES.small,
+    marginBottom: 2,
+  },
+  price: {
+    fontFamily: "bold",
+    fontSize: SIZES.medium,
+  },
+  addBtn: {
+    position: "absolute",
+    bottom: SIZES.xSmall,
+    right: SIZES.xSmall,
+  },
 });
 
 export default styles;

@@ -4,6 +4,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import * as SplashScreen from "expo-splash-screen";
 import React, { useCallback } from "react";
 import { useFonts } from "expo-font";
+import { ProductDetails } from "./screens";
 
 const Stack = createNativeStackNavigator();
 
@@ -36,6 +37,11 @@ export default function App() {
           options={{
             headerShown: false,
           }}
+        />
+        <Stack.Screen 
+          name="ProductDetails"
+          component={ProductDetails}
+          options={{ headerShown: false }}
         />
       </Stack.Navigator>
     </NavigationContainer>

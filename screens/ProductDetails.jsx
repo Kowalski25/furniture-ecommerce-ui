@@ -6,6 +6,7 @@ import {
   TouchableOpacity, 
 } from 'react-native';
 import { 
+  Fontisto,
   Ionicons, 
   SimpleLineIcons,
   MaterialCommunityIcons 
@@ -79,7 +80,7 @@ const ProductDetails = ({ navigation }) => {
           </View>
         </View>
         <View style={styles.descriptionWrapper}>
-          <Text style={styles.description}>Description title</Text>
+          <Text style={styles.descriptionTitle}>Description title</Text>
           <Text style={styles.descriptionText}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </Text>
@@ -95,6 +96,16 @@ const ProductDetails = ({ navigation }) => {
               <Text>  Free Delivery </Text>
             </View>
           </View>
+        </View>
+
+        <View style={styles.cartRow}>
+          <TouchableOpacity onPress={() => {}} style={styles.cartBtn}>
+            <Text style={styles.cartTitle}>Buy it now</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity onPress={() => {}} style={styles.addCart}>
+            <Text style={[styles.cartTitle, { color: COLORS.black}]}>Add to cart</Text>
+          </TouchableOpacity>
         </View>
 
       </View>

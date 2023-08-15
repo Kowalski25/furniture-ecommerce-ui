@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
   },
   ratingRow: {
-    paddingBottom: SIZES.small,
+    
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
@@ -79,17 +79,16 @@ const styles = StyleSheet.create({
     marginTop: SIZES.large * 2,
     marginHorizontal: SIZES.large,
   },
-  description: {
+  descriptionTitle: {
     fontFamily: 'medium',
     fontSize: SIZES.large - 3,
-    marginBottom: SIZES.xSmall,
+    marginBottom: SIZES.xSmall - 4,
   },
   descriptionText: {
     fontFamily: 'regular',
     fontSize: SIZES.small + 2,
-    marginBottom: SIZES.small + 2,
+    marginBottom: SIZES.small,
     textAlign: 'justify',
-    lineHeight: 20,
   },
   location: {
     backgroundColor: COLORS.secondary,
@@ -99,8 +98,37 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     marginHorizontal: 16,
     paddingVertical: 6,
-    paddingHorizontal: 8, 
-  }
+    paddingHorizontal: 8,
+  },
+  cartRow: {
+    paddingBottom: SIZES.small,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    width: SIZES.width - 10,
+  },
+  cartBtn: {
+    width: SIZES.width * 0.455,
+    backgroundColor: COLORS.black,
+    padding: SIZES.small,
+    borderRadius: 50,
+    marginLeft: 16,
+  },
+  cartTitle: {
+    color: COLORS.lightWhite,
+    fontFamily: 'bold',
+    fontSize: SIZES.medium,
+    textAlign: 'center'
+  },
+  addCart: {
+    backgroundColor: COLORS.lightWhite,
+    borderRadius: 50,
+    borderColor: COLORS.black,
+    borderWidth: 2,
+    marginRight: 5,
+    padding: SIZES.small - 2,
+    width: SIZES.width * 0.455,
+  },
 });
 
 export default styles;

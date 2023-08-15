@@ -1,5 +1,4 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons } from '@expo/vector-icons';
 import { COLORS } from '../constants/index';
@@ -29,12 +28,12 @@ const BottomTabNavigation = () => {
         component={Home}
         options={{
           tabBarIcon: ({ focused }) => {
-            return ( 
-              <Ionicons 
+            return (
+              <Ionicons
                 name={focused ? 'home' : 'home-outline'}
                 size={24}
-                color={focused ? COLORS.primary : COLORS.gray2} 
-              /> 
+                color={focused ? COLORS.primary : COLORS.gray2}
+              />
             );
           },
         }}
@@ -45,10 +44,10 @@ const BottomTabNavigation = () => {
         options={{
           tabBarIcon: ({ focused }) => {
             return (
-              <Ionicons 
+              <Ionicons
                 name='search-sharp'
                 size={24}
-                color={focused ? COLORS.primary : COLORS.gray2} 
+                color={focused ? COLORS.primary : COLORS.gray2}
               />
             );
           },
@@ -60,11 +59,11 @@ const BottomTabNavigation = () => {
         options={{
           tabBarIcon: ({ focused }) => {
             return (
-              <Ionicons 
+              <Ionicons
                 name={focused ? 'person' : 'person-outline'}
                 size={24}
-                color={focused ? COLORS.primary : COLORS.gray2} 
-              /> 
+                color={focused ? COLORS.primary : COLORS.gray2}
+              />
             );
           },
         }}
@@ -75,7 +74,3 @@ const BottomTabNavigation = () => {
 };
 
 export default BottomTabNavigation;
-
-const styles = StyleSheet.create({
-
-});

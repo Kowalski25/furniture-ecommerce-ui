@@ -23,9 +23,9 @@ const styles = StyleSheet.create({
   details: {
     marginTop: -SIZES.large,
     backgroundColor: COLORS.lightWhite,
-    width: SIZES.width,
     borderTopLeftRadius: SIZES.medium,
     borderTopRightRadius: SIZES.medium,
+    width: SIZES.width,
   },
   titleRow: {
     marginHorizontal: 20,
@@ -68,6 +68,38 @@ const styles = StyleSheet.create({
     color: COLORS.gray,
     fontFamily: 'medium',
     marginHorizontal: 5,
+  },
+  itemCount: {
+    color: COLORS.black,
+    fontFamily: 'medium',
+    fontSize: SIZES.large - 2,
+    marginHorizontal: 8,
+  },
+  descriptionWrapper: {
+    marginTop: SIZES.large * 2,
+    marginHorizontal: SIZES.large,
+  },
+  description: {
+    fontFamily: 'medium',
+    fontSize: SIZES.large - 3,
+    marginBottom: SIZES.xSmall,
+  },
+  descriptionText: {
+    fontFamily: 'regular',
+    fontSize: SIZES.small + 2,
+    marginBottom: SIZES.small + 2,
+    textAlign: 'justify',
+    lineHeight: 20,
+  },
+  location: {
+    backgroundColor: COLORS.secondary,
+    borderRadius: SIZES.large,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    marginHorizontal: 16,
+    paddingVertical: 6,
+    paddingHorizontal: 8, 
   }
 });
 

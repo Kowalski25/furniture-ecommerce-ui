@@ -7,21 +7,21 @@ const styles = StyleSheet.create({
     marginTop: SIZES.small,
   },
   appBar: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
   },
   location: {
     color: COLORS.gray,
-    fontFamily: 'semibold',
+    fontFamily: "semibold",
     fontSize: SIZES.medium,
   },
   cartCount: {
-    backgroundColor: 'green',
+    backgroundColor: "green",
     borderRadius: 8,
-    alignItems: 'center',
-    justifyContent: 'center',
-    position: 'absolute',
+    alignItems: "center",
+    justifyContent: "center",
+    position: "absolute",
     bottom: 16,
     height: 16,
     width: 16,
@@ -29,10 +29,10 @@ const styles = StyleSheet.create({
   },
   cartNumber: {
     color: COLORS.lightWhite,
-    fontFamily: 'regular',
+    fontFamily: "regular",
     fontSize: 10,
     fontWeight: 600,
-  }
+  },
 });
 
 export default styles;

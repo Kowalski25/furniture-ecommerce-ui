@@ -1,6 +1,5 @@
-import { StyleSheet } from 'react-native';
-import { COLORS, SIZES } from '../../constants';
-
+import { StyleSheet } from "react-native";
+import { COLORS, SIZES } from "../../constants";
 
 const styles = StyleSheet.create({
   container: {
@@ -9,14 +8,13 @@ const styles = StyleSheet.create({
     marginHorizontal: 12,
   },
   header: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
+    flexDirection: "row",
+    justifyContent: "space-between",
   },
   headerTitle: {
-    fontFamily: 'semibold',
+    fontFamily: "semibold",
     fontSize: SIZES.xLarge - 3,
-
-  }
+  },
 });
 
 export default styles;

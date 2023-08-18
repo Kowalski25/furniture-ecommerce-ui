@@ -3,10 +3,6 @@ import { StyleSheet, Text, View, ActivityIndicator } from 'react-native';
 import { SliderBox } from 'react-native-image-slider-box';
 import { COLORS, SIZES } from '../../constants/index';
 
-const ImageLoader = () => {
-  return <ActivityIndicator size="large" color="blue" />
-}
-
 const Carousel = () => {
   const slides = [
     "https://d326fntlu7tb1e.cloudfront.net/uploads/cb2e64a8-ad4c-4d45-b58b-b0c7e11b6bb4-fn1.jpg",
@@ -16,10 +12,10 @@ const Carousel = () => {
 
   return (
     <View style={styles.carouselContainer}>
-      <SliderBox 
-        images={slides} 
-        dotColor={ COLORS.primary }
-        inactiveDotColor={ COLORS.secondary }
+      <SliderBox
+        images={slides}
+        dotColor={COLORS.primary}
+        inactiveDotColor={COLORS.secondary}
         ImageComponentStyle={{ borderRadius: 15, width: '93%', marginTop: 15 }}
         circleLoop={true}
         dotsTransitionDuration={100}
